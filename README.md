@@ -1,3 +1,33 @@
+结合orbslam2，同时用点、线、面特征，提高系统对弱纹理区域的鲁棒性
+
+# how to run
+```
+## prerequisties
+Pangolin
+OpenCV-4.0 and OpenCV_Contrib-4.0
+Eigen3
+PCL
+
+## download rgbd dataset 
+go to https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download
+
+## build 
+git clone https://github.com/lturing/PlanarSLAM_modified
+cd PlanarSLAM_modified
+chmod +x ./build.sh 
+./build.sh 
+
+## run 
+python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associations.txt
+
+./Examples/RGB-D/Planar_SLAM Vocabulary/ORBvoc.txt Examples/RGB-D/TUM3.yaml /path/to/dataset/rgbd_dataset_freiburg3_long_office_household /path/to/dataset/rgbd_dataset_freiburg3_long_office_household/assocaite.txt
+
+```
+
+<br>
+<details>
+  <summary><strong>offical readme</strong>(click to expand)</summary>
+
 # PlanarSLAM
 This repo proposes a RGB-D SLAM system specifically designed for structured environments and aimed at improved tracking and mapping accuracy by relying on geometric features that are extracted from the surrounding. More details can be found in our papers ([RGB-D](https://arxiv.org/abs/2010.07997) and [Monocular](https://arxiv.org/abs/2008.01963)).  
 
@@ -131,3 +161,4 @@ inproceedings{Li2020SSLAM,
 
 ORB_SLAM2 and the corresponding community.
 
+</details>
