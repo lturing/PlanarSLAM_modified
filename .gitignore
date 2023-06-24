@@ -1,0 +1,13 @@
+build/*
+Thirdparty/g2o/build/*
+Thirdparty/DBoW2/build/*
+lib/*
+Vocabulary/ORBvoc.txt
+total_plp.txt
+Track_plp.txt
+Feature_plp.txt
+CameraTrajectory.txt
+KeyFrameTrajectory.txt
+MeshMap.ply
+mesh
+__pycache__/
