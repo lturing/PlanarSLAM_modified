@@ -24,6 +24,9 @@ python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associ
 
 ```
 
+# demo 
+- [b站](https://www.bilibili.com/video/BV1Xs4y1C7b9/)
+
 <br>
 <details>
   <summary><strong>offical readme</strong>(click to expand)</summary>
